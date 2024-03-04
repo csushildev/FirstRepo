@@ -1,3 +1,127 @@
-This is my first file.
-
-making some changes to the file.
+{
+    "fullName": "Sushil Chaudhari",
+    "professionalTitle": "Senior Pega Developer and DevOps",
+    "githubLink": "https://github.com/csushildev",
+    "professionalSummary": "Sushil Chaudhari is a Highly experienced Senior Pega Developer and DevOps, with 10+ years of experience in application development using PEGA PRPC and traditional web technologies, coupled with exposure to cloud technology and knowledge on DevOps tools...",
+    "skills": [
+        {
+            "name": "PEGA PRPC and CDH",
+            "link": "#"
+        },
+        {
+            "name": "Java",
+            "link": "#"
+        },
+        {
+            "name": "JavaScript",
+            "link": "https://github.com/csushildev/vuejs"
+        },
+        {
+            "name": "HTML",
+            "link": "https://github.com/csushildev/Introduction"
+        },
+        {
+            "name": "SQL",
+            "link": "#"
+        },
+        {
+            "name": "AWS",
+            "link": "https://github.com/csushildev/aws"
+        },
+        {
+            "name": "Jira",
+            "link": "#"
+        },
+        {
+            "name": "Confluence",
+            "link": "#"
+        },
+        {
+            "name": "Docker",
+            "link": "https://github.com/csushildev/containers-on-bluewhale"
+        },
+        {
+            "name": "Kubernetes",
+            "link": "https://github.com/csushildev/kubernetes"
+        },
+        {
+            "name": "Linux, Shell Scripting",
+            "link": "#"
+        },
+        {
+            "name": "Python",
+            "link": "https://github.com/csushildev/pyWebApp2.git"
+        }
+    ],
+    "contactInfo": {
+        "phone": "+61 46 909 5839",
+        "email": "sachaudhari1803@gmail.com"
+    },
+    "projects": [
+        {
+            "name": "Department of Transport and Planning, Victoria (Cloud Arch)",
+            "tenure": "July 2022 – Feb 2024",
+            "description": "Working as Senior Pega developer and DevOps engineer for a Payments system with Dept. of Transport in Victoria..."
+        },
+        {
+            "name": "Services Australia (Cloud Arch)",
+            "tenure": "April 2022 – July 2022",
+            "description": "Working as Senior Pega developer for a project on Pension Calculation based on customer’s circumstance change. Application uses Pega business rules capability as headless application. Main objective is to enable business users to configure any changes to rates or business rules in future in a more user-friendly manner."
+        },
+        {
+            "name": "TAL Life (Areteans)",
+            "tenure": "May 2021 – April 2022",
+            "description": "Working on a Customer Service application using Pega for Insurance and CS for Insurance Frameworks. Lead Pega developer handling e2e delivery for ASIC Complaints handling module."
+        },
+        {
+            "name": "Macquarie (Virtusa)",
+            "tenure": "June 2018 – May 2021",
+            "description": "Post-Settlement Account Servicing and Collections for Macquarie Bank. As a Senior SSA, contributed to improve the post settlement business process for personal banking products like cash, card and mortgage. Also working on Collections application for mortgage loans. The applications used multiple Pega FW like - Pega Collections Framework, Pega CDH and Pega CS for FS."
+        },
+        {
+            "name": "Asurion LLC (Synechron)",
+            "tenure": "November 2015 – May 2018",
+            "description": "Worked on Insurance and Banking Domain projects. While working on device insurance project, worked as SPOC for offshore modules and also provided developer support for Production issues. It was a customer service application based on Pega CPM."
+        },
+        {
+            "name": "Standard Chartered Bank (Synechron)",
+            "tenure": "November 2015 – May 2018",
+            "description": "On-Boarding CASA and CCPL for Std. Chartered Bank. While working with banking project, I had a chance to work from client location. It is a retail bank application for customer Onboarding. I was involved in creation of extensible framework for its retail banking business over APAC region."
+        },
+        {
+            "name": "American Ex. (Virtusa)",
+            "tenure": "July 2015 – November 2015",
+            "description": "Worked for a banking client as a part of Asset Management Team. Worked for process and performance improvement at Client."
+        },
+        {
+            "name": "Charles Schwab (Infosys)",
+            "tenure": "August 2014 – July 2015",
+            "description": "As a Senior Developer Looked over multiple modules and mentored other fellow developers for their deliverables. It was a real-time application to update, and monitoring positions of the customers based on frequently changing data received from market and further processing. This was built using Pega and used some Java/JavaScript."
+        },
+        {
+            "name": "BNY Mellon",
+            "tenure": "July 2011 – July 2014",
+            "description": "Project Name: Asset Servicing, Onboarding Treasury Products, Liquidity Dashboard Worked on multiple projects on Treasury, Asset Management and Liquidity as Java Developer."
+        }
+    ],
+    "certifications": [
+        "Pega Certified Senior System Architect",
+        "Pega Certified Decisioning Consultant",
+        "Pega Certified System Architect",
+        "AWS Certified Solution Architect - Associate",
+        "ISC2 Certified in CyberSecurity"
+    ],
+    "links": [
+        {
+            "url": "https://github.com/csushildev/aws",
+            "text": "See the technical details of this |Resume On Cloud|"
+        },
+        {
+            "url": "https://drive.google.com/file/d/1mM93CXBJlit7EcJG5Gt318EQtaG3g8uD/view?usp=sharing",
+            "text": "Sushil_Chaudhari_Resume.pdf"
+        },
+        {
+            "url": "https://docs.google.com/document/d/1hqf3fSxAU6mQuwoqHkHs4EcJ4ahSvXsS/edit?usp=sharing&ouid=100204338687709950733&rtpof=true&sd=true"
+        }
+    ]
+}
