@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
   <title>Sushil Chaudhari - Senior Pega Developer and DevOps</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -118,7 +119,54 @@ As a Senior SSA, contributed to improve the post settlement business process for
 </section>
 	
   </main>
+<div id="app">
+    <visitor-info></visitor-info>
+  </div>
+	
+	<script>
+    Vue.component('visitor-info', {
+      data() {
+        return {
+          name: '',
+          company: ''
+        }
+      },
+      methods: {
+        saveToFile() {
+          // Construct the data string
+          const dataString = `Name: ${this.name}, Company: ${this.company}\n`;
 
+          // Create a Blob with the data
+          const blob = new Blob([dataString], { type: 'text/plain' });
+
+          // Create a temporary anchor element
+          const a = document.createElement('a');
+          a.href = URL.createObjectURL(blob);
+          a.download = 'visitor_info.txt';
+
+          // Simulate a click on the anchor to trigger the download
+          a.click();
+
+          // Clean up
+          URL.revokeObjectURL(a.href);
+        }
+      },
+      template: `
+        <div>
+          <h2>Visitor Information</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" v-model="name"><br>
+          <label for="company">Company:</label>
+          <input type="text" id="company" v-model="company"><br>
+          <button @click="saveToFile">Save to File</button>
+        </div>
+      `
+    });
+
+    new Vue({
+      el: '#app'
+    });
+  </script>
 
 </body>
 </html>
