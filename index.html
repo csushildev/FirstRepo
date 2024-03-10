@@ -3,170 +3,206 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-  <title>Sushil Chaudhari - Senior Pega Developer and DevOps</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Sushil Chaudhari - Professional Resume</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    #app {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    main {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    .about p,
+    .contact p {
+      font-size: 16px;
+    }
+
+    .experience ul {
+      padding-left: 20px;
+    }
+
+    .experience li {
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background-color: #f5f5f5;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .experience strong {
+      font-size: 20px;
+      color: #007bff;
+    }
+
+    .experience li:hover {
+      background-color: #eaeaea;
+    }
+
+    .experience li::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      border: 2px solid rgba(0, 123, 255, 0.5);
+      z-index: -1;
+    }
+
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: -10px;
+    }
+
+    .skills li {
+      margin: 5px;
+      padding: 5px 10px;
+      background-color: #0f0f0f;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills li:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Sushil Chaudhari</h1>
-    <p>Senior Pega Developer and DevOps</p> <a href="https://github.com/csushildev"><i class="fab fa-github" style='font-size:30px'></i></a>
-  </header>
+  <div id="app">
+    <header>
+      <h1>{{ data.fullName }}</h1>
+      <p>{{ data.professionalTitle }}</p>
+      <a :href="data.githubLink"><i class="fab fa-github"></i></a>
+    </header>
 
-  <main class="container">
-    <section class="about">
-      <h2>Professional Summary : </h2>
-      <p>
-        Sushil Chaudhari is a Highly experienced Senior Pega Developer and DevOps, with 10+ years of experience in application development using PEGA PRPC and traditional web technologies, coupled with exposure to cloud technology and knowledge on DevOps tools. Adept at managing complex projects, integrating systems, and enhancing compliance and code quality, keen to leverage these skills to further improve and innovate application development processes.
-    
-      </p>
-    </section>
+    <main class="container">
+      <section class="about">
+        <h2>Professional Summary:</h2>
+        <p>{{ data.professionalSummary }}</p>
+      </section>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li><!--<a href="https://drive.google.com/file/d/1oXe6HWAlC6vEbOUJiS8Uhg7V0BJfhe17/view?usp=drive_link" style="text-decoration:none">-->PEGA PRPC and CDH</a></li>
-        <li><!--<a href="https://docs.google.com/document/d/1D-AFRL1QA-qTxRInYhW8M90jxAW7Hz8ozXiyiLA5yYQ/edit?usp=drive_link" style="text-decoration:none">-->Java</a></li>
-        <li><a href="https://github.com/csushildev/vuejs" style="text-decoration:none">JavaScript</li>
-        <li><a href="https://github.com/csushildev/Introduction" style="text-decoration:none">HTML</a></li>
-        <li><!--<a href="https://github.com/csushildev/sql" style="text-decoration:none">-->SQL</a></li>
-        <li><a href="https://github.com/csushildev/aws" style="text-decoration:none">AWS</a></li>
-        <li>Jira</li>
-        <li>Confluence</li>
-        <li><a href="https://github.com/csushildev/containers-on-bluewhale" style="text-decoration:none">Docker</a></li>
-        <li><a href="https://github.com/csushildev/kubernetes" style="text-decoration:none">Kubernetes</a></li>
-        <li><!--<a href="https://github.com/csushildev/scripting" style="text-decoration:none">-->Linux, Shell Scripting</a></li>
-        <li> <a href="https://github.com/csushildev/pyWebApp2.git" style="text-decoration:none">Python</a></li>
-        <!-- Add more skills here -->
-      </ul>
-    </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li v-for="skill in data.skills">{{ skill.name }}</li>
+        </ul>
+      </section>
    
-    <section class="contact">
-      <h2>Contact Me</h2>
-      <p>Phone: +61 46 909 5839</p>
-      <p>Email: <a href="mailto:sachaudhari1803@gmail.com">sachaudhari1803@gmail.com</a></p>
-      <!-- Add more contact information here -->
-    </section>
+      <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Phone: {{ data.contactInfo.phone }}</p>
+        <p>Email: <a :href="'mailto:' + data.contactInfo.email">{{ data.contactInfo.email }}</a></p>
+      </section>
 
-    <section class="experience">
-      <h2>Projects Experience</h2>
-      <ul>
-        <li>
-          <strong>Department of Transport and Planning, Victoria (Cloud Arch)</strong><br>
-          Tenure: July 2022 – Feb 2024<br>
-         Working as Senior Pega developer and DevOps engineer for a Payments system with Dept. of Transport in Victoria. Business uses Pega BPM to process payments to service providers of Bus, Rail, tram, and Ferry Transport. 
+      <section class="experience">
+        <h2>Projects Experience</h2>
+        <ul>
+          <li v-for="project in data.projects" class="project">{{ project.name }}<br>Tenure: {{ project.tenure }}<br>{{ project.description }}</li>
+        </ul>
+      </section>
 
-        </li>
-        <li>
-          <strong>Services Australia (Cloud Arch)</strong><br>
-          Tenure: April 2022 – July 2022<br>
-          Working as Senior Pega developer for a project on Pension Calculation based on customer’s circumstance change. Application uses Pega business rules capability as headless application. Main objective is to enable business users to configure any changes to rates or business rules in future in a more user-friendly manner.</li>
-        <li>
-          <strong>TAL Life (Areteans)</strong><br>
-          Tenure: May 2021 – April 2022<br>
-          Working on a Customer Service application using Pega for Insurance and CS for Insurance Frameworks. Lead Pega developer handling e2e delivery for ASIC Complaints handling module.
-        </li>
-        <li>
-      <strong>Macquarie (Virtusa)</strong><br>
-      Tenure: June 2018 – May 2021<br>
-      Post-Settlement Account Servicing and Collections for Macquarie Bank.
-As a Senior SSA, contributed to improve the post settlement business process for personal banking products like cash, card and mortgage. Also working on Collections application for mortgage loans. The applications used multiple Pega FW like - Pega Collections Framework, Pega CDH and Pega CS for FS.
+      <section class="certifications">
+        <h2>Certifications</h2>
+        <ul>
+          <li v-for="certification in data.certifications">{{ certification }}</li>
+        </ul>
+      </section>
 
-    </li>
-    <li>
-      <strong>Asurion LLC (Synechron)</strong><br>
-      Tenure: November 2015 – May 2018<br>
-      Worked on Insurance and Banking Domain projects. While working on device insurance project, worked as SPOC for offshore modules and also provided developer support for Production issues. It was a customer service application based on Pega CPM.
-    </li>
-    <li>
-      <strong>Standard Chartered Bank (Synechron)</strong><br>
-      Tenure: November 2015 – May 2018<br>
-      On-Boarding CASA and CCPL for Std. Chartered Bank. While working with banking project, I had a chance to work from client location. It is a retail bank application for customer Onboarding. I was involved in creation of extensible framework for its retail banking business over APAC region.
-    </li>
-    <li>
-      <strong>American Ex. (Virtusa)</strong><br>
-      Tenure: July 2015 – November 2015<br>
-      Worked for a banking client as a part of Asset Management Team. Worked for process and performance improvement at Client.
-    </li>
-    <li>
-      <strong>Charles Schwab (Infosys)</strong><br>
-      Tenure: August 2014 – July 2015<br>
-      As a Senior Developer Looked over multiple modules and mentored other fellow developers for their deliverables. It was a real-time application to update, and monitoring positions of the customers based on frequently changing data received from market and further processing. This was built using Pega and used some Java/JavaScript.
-    </li>
-        <li>
-          <strong>BNY Mellon</strong><br>
-          Tenure: July 2011 – July 2014<br>
-          Project Name: Asset Servicing, Onboarding Treasury Products, Liquidity Dashboard Worked on multiple projects on Treasury, Asset Management and Liquidity as Java Developer.
-        </li>
-      </ul>
-    </section>
-  
-   <section>
-			<h2 class="contact">CERTIFICATIONS</h2>
-			<ul>
-				<li>Pega Certified Senior System Architect</li>
-			<li>Pega Certified Decisioning Consultant</li>				
-			<li>Pega Certified System Architect</li>
-			<li>AWS Certified Solution Architect - Associate</li>
-			<li>ISC2 Certified in CyberSecurity</li></uL>
-    </section>
-  <section>
-			<h2 class="contact">Links : </h2>
-			<ul><li><a href="https://github.com/csushildev/aws" style="text-decoration:none"> See the technical details of this |Resume On Cloud| </a></li>
-				<li><a href="https://drive.google.com/file/d/1mM93CXBJlit7EcJG5Gt318EQtaG3g8uD/view?usp=sharing" download="Sushil_Chaudhari_Resume.pdf">Sushil_Chaudhari_Resume.pdf</a></li>
-			<li><a href="https://docs.google.com/document/d/1hqf3fSxAU6mQuwoqHkHs4EcJ4ahSvXsS/edit?usp=sharing&ouid=100204338687709950733&rtpof=true&sd=true" download="Sushil_Chaudhari_Resume.docx"> Sushil_Chaudhari_Resume.docx</a></li>			
-			</ul>
-</section>
-	
-  </main>
-<div id="app" class="experience">
-    <visitor-info></visitor-info>
+      <section class="links">
+        <h2>Links</h2>
+        <ul>
+          <li v-for="link in data.links"><a :href="link.url">{{ link.text }}</a></li>
+        </ul>
+      </section>
+    </main>
   </div>
-	
-	<script>
-    Vue.component('visitor-info', {
-      data() {
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
         return {
-          name: '',
-          company: ''
-        }
+          data: null
+        };
+      },
+      mounted: function() {
+        this.loadData();
       },
       methods: {
-        saveToFile() {
-          // Construct the data string
-          const dataString = `Name: ${this.name}, Company: ${this.company}\n`;
-
-          // Create a Blob with the data
-          const blob = new Blob([dataString], { type: 'text/plain' });
-
-          // Create a temporary anchor element
-          const a = document.createElement('a');
-          a.href = URL.createObjectURL(blob);
-          a.download = 'visitor_info.txt';
-
-          // Simulate a click on the anchor to trigger the download
-          a.click();
-
-          // Clean up
-          URL.revokeObjectURL(a.href);
+        loadData: function() {
+          fetch('https://raw.githubusercontent.com/csushildev/Introduction/master/master.txt')
+            .then(response => response.json())
+            .then(data => {
+              this.data = data;
+            })
+            .catch(error => {
+              console.error('Error loading data:', error);
+            });
         }
-      },
-      template: `
-        <div>
-          <h2>Visitor Information</h2>
-          <label for="name">Name:</label>
-          <input type="text" id="name" v-model="name"><br>
-          <label for="company">Company:</label>
-          <input type="text" id="company" v-model="company"><br>
-          <button @click="saveToFile">Save to File</button>
-        </div>
-      `
-    });
-
-    new Vue({
-      el: '#app'
+      }
     });
   </script>
-
 </body>
 </html>
