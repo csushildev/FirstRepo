@@ -61,7 +61,7 @@
         {
             "name": "Department of Transport and Planning, Victoria (Cloud Arch)",
             "tenure": "July 2022 – Feb 2024",
-            "description": "Working as Senior Pega developer and DevOps engineer for a Payments system with Dept. of Transport in Victoria..."
+            "description": "Working as Senior Pega developer and DevOps engineer for a Payments system with Dept. of Transport in Victoria. Business uses Pega BPM to process payments to service providers of Bus, Rail, tram, and Ferry Transport."
         },
         {
             "name": "Services Australia (Cloud Arch)",
